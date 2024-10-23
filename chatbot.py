@@ -1,8 +1,11 @@
 import streamlit as st
 from openai import OpenAI
+import os
+
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 with st.sidebar:
-    openai_api_key = st.text_input("OpenAI API Key", key="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", type="password")
+    # openai_api_key = st.text_input("OpenAI API Key", key="", type="password")
     "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
 
 st.title("💬 Chatbot")
