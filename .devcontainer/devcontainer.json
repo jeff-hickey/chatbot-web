@@ -11,5 +11,6 @@
     "ms-python.python",
     "ms-python.vscode-pylance"
   ],
-  "postCreateCommand": "pip install -r requirements.txt"
+  "postCreateCommand": "pip install -r requirements.txt",
+  "postStartCommand": "echo 'export OPENAI_API_KEY=${OPENAI_API_KEY}' >> ~/.bashrc"
 }
