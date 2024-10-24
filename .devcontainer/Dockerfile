@@ -1,7 +1,7 @@
 LABEL authors="jeffhickey"
 
 # Use the official Python image from the Docker Hub
-FROM python:3.9
+FROM python:3.11
 
 # Update the package list and install pip
 RUN apt-get update && apt-get install -y python3-pip
