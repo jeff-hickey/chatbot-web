@@ -1,6 +1,5 @@
 {
   "name": "Chatbot Web",
-  "image": "mcr.microsoft.com/devcontainers/python:0-3.11-bullseye",
   "dockerFile": "Dockerfile",
   "appPort": [
     8501
@@ -9,8 +8,7 @@
     "terminal.integrated.shell.linux": "/bin/bash"
   },
   "extensions": [
-    "ms-python.python",
-    "ms-python.vscode-pylance"
+    "ms-python.python"
   ],
   "postCreateCommand": "pip install -r requirements.txt",
   "postStartCommand": "echo 'export OPENAI_API_KEY=${OPENAI_API_KEY}' >> ~/.bashrc"
