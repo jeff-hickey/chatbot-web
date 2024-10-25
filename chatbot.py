@@ -3,7 +3,7 @@ from openai import OpenAI
 import os
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
-print(openai_api_key)
+print('>>>>> ', openai_api_key)
 
 with st.sidebar:
     # openai_api_key = st.text_input("OpenAI API Key", key="", type="password")
