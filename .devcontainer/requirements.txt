@@ -1,0 +1,6 @@
+# Streamlit
+streamlit
+# OpenAI API
+openai
+# Watchdog is recommended for better performance.
+watchdog
