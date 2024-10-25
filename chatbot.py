@@ -7,9 +7,10 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 
 with st.sidebar:
     # openai_api_key = st.text_input("OpenAI API Key", key="", type="password")
-    "[![Open in GitHub ](https://github.com/codespaces/badge.svg)](https://github.com/jeff-hickey/chatbot-web)"
-
-st.title("💬 Team Three Chatbot")
+    "[View in GitHub ](https://github.com/jeff-hickey/chatbot-web)"
+    "[Team Three Presentation](https://docs.google.com/presentation/d/1Vq_Ya4rfMQS8H4ZXq9hFsPCMIlDVWwev_M2-6UEccCU/edit?usp=sharing)"
+    "[Chat with Your Data](https://docs.google.com/document/d/1Q94i7sC2rOP9nFRDOo_uEGntvBbdDxom2CfHNZYURjQ/edit?usp=sharing)"
+st.title("💬 Customer Service Chatbot")
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
