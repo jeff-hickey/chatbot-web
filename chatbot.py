@@ -3,13 +3,13 @@ from openai import OpenAI
 import os
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
-print('>>>>> ', openai_api_key)
+
 
 with st.sidebar:
     # openai_api_key = st.text_input("OpenAI API Key", key="", type="password")
-    "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
+    "[![View in GitHub ](https://github.com/jeff-hickey/chatbot-web)"
 
-st.title("💬 Chatbot")
+st.title("💬 Team Three Chatbot")
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
