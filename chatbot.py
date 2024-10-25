@@ -7,7 +7,7 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 
 with st.sidebar:
     # openai_api_key = st.text_input("OpenAI API Key", key="", type="password")
-    "[![View in GitHub ](https://github.com/jeff-hickey/chatbot-web)"
+    "[![Open in GitHub ](https://github.com/codespaces/badge.svg)](https://github.com/jeff-hickey/chatbot-web)"
 
 st.title("💬 Team Three Chatbot")
 
