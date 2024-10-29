@@ -3,13 +3,13 @@ from openai import OpenAI
 import os
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
-
+print(openai_api_key)
 
 with st.sidebar:
     # openai_api_key = st.text_input("OpenAI API Key", key="", type="password")
-    "[View in GitHub ](https://github.com/jeff-hickey/chatbot-web)"
-    "[Team Three Presentation](https://docs.google.com/presentation/d/1Vq_Ya4rfMQS8H4ZXq9hFsPCMIlDVWwev_M2-6UEccCU/edit?usp=sharing)"
-    "[Chat with Your Data](https://docs.google.com/document/d/1Q94i7sC2rOP9nFRDOo_uEGntvBbdDxom2CfHNZYURjQ/edit?usp=sharing)"
+    "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/jeff-hickey/chatbot-web?quickstart=1)"
+    # "[Team Three Presentation](https://docs.google.com/presentation/d/1Vq_Ya4rfMQS8H4ZXq9hFsPCMIlDVWwev_M2-6UEccCU/edit?usp=sharing)"
+    # "[Chat with Your Data](https://docs.google.com/document/d/1Q94i7sC2rOP9nFRDOo_uEGntvBbdDxom2CfHNZYURjQ/edit?usp=sharing)"
 st.title("💬 Customer Service Chatbot")
 
 if "messages" not in st.session_state:
